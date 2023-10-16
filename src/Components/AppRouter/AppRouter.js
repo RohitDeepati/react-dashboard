@@ -1,10 +1,10 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import { Dashboard } from "../../Pages/Dashboard/Dashboard";
 import { Customers } from "../../Pages/Customers/Customers";
 import { Inventory } from "../../Pages/Inventory/Inventory";
 import { Income } from "../../Pages/Income/Income";
 import { Orders } from "../../Pages/Orders/Orders";
-import { Switch } from "antd";
+
 export const AppRouter = () => {
   return (
     <Routes>
