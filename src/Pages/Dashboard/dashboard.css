@@ -1,0 +1,55 @@
+.dashboard-card {
+  display: flex;
+  gap: 2rem;
+}
+
+.container {
+  width: 250px;
+  padding: 2rem 0;
+}
+
+.charts {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem 2rem;
+}
+
+.chart {
+  width: 600px;
+  height: 350px;
+}
+
+/* Media query for mobile screens */
+@media (max-width: 768px) {
+  .dashboard-card {
+    display: flex;
+    flex-direction: column; /* Stack cards vertically on mobile screens */
+    gap: 1rem; /* Reduce the gap between cards for mobile */
+  }
+
+  .container {
+    width: 100%; /* Take full width on all screen sizes */
+    padding: 1rem; /* Adjust padding for mobile screens */
+    box-sizing: border-box;
+  }
+
+  .charts {
+    display: flex;
+    flex-direction: column; /* Stack charts vertically on mobile screens */
+    gap: 1rem; /* Reduce the gap between charts for mobile */
+    padding: 1rem; /* Adjust padding for mobile screens */
+  }
+
+  .chart {
+    width: 100%; /* Take full width on all screen sizes */
+    max-width: none; /* Allow the chart to be as wide as the screen allows */
+    height: 350px;
+  }
+  .dashboard-card {
+    gap: 1rem; /* Reduce the gap between cards for smaller screens */
+  }
+
+  .chart {
+    height: auto; /* Allow the chart to adjust its height as needed */
+  }
+}

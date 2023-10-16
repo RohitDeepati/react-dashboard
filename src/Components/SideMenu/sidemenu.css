@@ -1,0 +1,65 @@
+/* Styles for large screens */
+.SideMenu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 250px;
+  background-color: darkblue;
+  color: rgb(183, 34, 34);
+}
+
+.MenuToggle {
+  display: none; /* Hide the toggle button on large screens */
+}
+
+.SideMenuVertical {
+  height: 100%;
+  background-color: #4066d4;
+  color: white;
+}
+
+/* Media query for small screens */
+@media (max-width: 768px) {
+  .SideMenu {
+    width: 100%; /* Take full width on small screens */
+    left: -100%; /* Move the menu off-screen to the left */
+  }
+
+  .MenuToggle {
+    display: block; /* Show the toggle button on small screens */
+  }
+
+  .SideMenuVertical {
+    position: fixed; /* Keep the menu fixed to the top on small screens */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px; /* Adjust the height as needed */
+  }
+}
+
+@media (min-width: 768px) {
+  .SideMenu {
+    width: 200px;
+    height: 100%;
+  }
+
+  .SideMenuVertical {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 767px) {
+  .SideMenu {
+    height: 50px;
+    width: 100%;
+  }
+
+  .SideMenuVertical {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}

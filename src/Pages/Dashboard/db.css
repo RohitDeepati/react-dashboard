@@ -1,0 +1,6 @@
+/* Hide the mobile dropdown on screens larger than 768px */
+@media (min-width: 769px) {
+  .mobile-dropdown {
+    display: none;
+  }
+}
